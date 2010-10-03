@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2AAC0CC05546C4400DB518D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		E162AA2C1258E784002B0036 /* OFDate.h in Headers */ = {isa = PBXBuildFile; fileRef = E162AA2A1258E784002B0036 /* OFDate.h */; };
+		E162AA2D1258E784002B0036 /* OFDate.m in Sources */ = {isa = PBXBuildFile; fileRef = E162AA2B1258E784002B0036 /* OFDate.m */; };
+		E162AAA91259118A002B0036 /* Example_MacAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E162AAA81259118A002B0036 /* Example_MacAppDelegate.m */; };
+		E162AAAC1259119D002B0036 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E162AAAB1259119D002B0036 /* main.m */; };
+		E162AAB3125911BB002B0036 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E162AAAE125911BB002B0036 /* InfoPlist.strings */; };
+		E162AAB4125911BB002B0036 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E162AAB0125911BB002B0036 /* MainMenu.xib */; };
+		E162AAE71259162D002B0036 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E162AAE61259162D002B0036 /* WebKit.framework */; };
+		E162AAEB12591634002B0036 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E170E7391256C1B50019E021 /* Cocoa.framework */; };
+		E162AAEC12591639002B0036 /* ObjectiveFeed-Mac.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC0C705546C1D00DB518D /* ObjectiveFeed-Mac.dylib */; };
+		E162AAF01259164A002B0036 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E162AAEF1259164A002B0036 /* AppKit.framework */; };
+		E162AAF11259164A002B0036 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16A77931256B89100800940 /* Foundation.framework */; };
+		E16A76F61256789400800940 /* ObjectiveFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = E16A76E81256789400800940 /* ObjectiveFeed.h */; };
+		E16A76F71256789400800940 /* ObjectiveFeedInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = E16A76E91256789400800940 /* ObjectiveFeedInternal.h */; };
+		E16A76F81256789400800940 /* OFEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = E16A76EA1256789400800940 /* OFEntry.h */; };
+		E16A76F91256789400800940 /* OFEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = E16A76EB1256789400800940 /* OFEntry.m */; };
+		E16A76FA1256789400800940 /* OFFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = E16A76EC1256789400800940 /* OFFeed.h */; };
+		E16A76FB1256789400800940 /* OFFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = E16A76ED1256789400800940 /* OFFeed.m */; };
+		E16A76FC1256789400800940 /* OFFeedProcessorAtom.h in Headers */ = {isa = PBXBuildFile; fileRef = E16A76EE1256789400800940 /* OFFeedProcessorAtom.h */; };
+		E16A76FD1256789400800940 /* OFFeedProcessorAtom.m in Sources */ = {isa = PBXBuildFile; fileRef = E16A76EF1256789400800940 /* OFFeedProcessorAtom.m */; };
+		E16A76FE1256789400800940 /* OFFeedProcessorRss.h in Headers */ = {isa = PBXBuildFile; fileRef = E16A76F01256789400800940 /* OFFeedProcessorRss.h */; };
+		E16A76FF1256789400800940 /* OFFeedProcessorRss.m in Sources */ = {isa = PBXBuildFile; fileRef = E16A76F11256789400800940 /* OFFeedProcessorRss.m */; };
+		E16A77001256789400800940 /* OFLog.h in Headers */ = {isa = PBXBuildFile; fileRef = E16A76F21256789400800940 /* OFLog.h */; };
+		E16A77011256789400800940 /* OFLog.m in Sources */ = {isa = PBXBuildFile; fileRef = E16A76F31256789400800940 /* OFLog.m */; };
+		E16A77021256789400800940 /* OFParser.h in Headers */ = {isa = PBXBuildFile; fileRef = E16A76F41256789400800940 /* OFParser.h */; };
+		E16A77031256789400800940 /* OFParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E16A76F51256789400800940 /* OFParser.m */; };
+		E16A79301256BC6600800940 /* ObjectiveFeed-Mac_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = E16A792F1256BC6600800940 /* ObjectiveFeed-Mac_Prefix.pch */; };
+		E170E8021256C4730019E021 /* ObjectiveFeed-Mac.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC0C705546C1D00DB518D /* ObjectiveFeed-Mac.dylib */; };
+		E170E80D1256C47C0019E021 /* GHUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16A774C125679B600800940 /* GHUnit.framework */; };
+		E170E82C1256C48A0019E021 /* GHUnit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E16A774C125679B600800940 /* GHUnit.framework */; };
+		E170E8351256C49F0019E021 /* GHUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = E16A77771256B79E00800940 /* GHUnitTestMain.m */; };
+		E170E83C1256C4C50019E021 /* OFTestProcessorDetect.m in Sources */ = {isa = PBXBuildFile; fileRef = E16A771C1256790900800940 /* OFTestProcessorDetect.m */; };
+		E170E83D1256C4C50019E021 /* OFTestRssParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E16A771E1256790900800940 /* OFTestRssParser.m */; };
+		E170E8C11256C91E0019E021 /* sample-atom.xml in Resources */ = {isa = PBXBuildFile; fileRef = E16A77181256790900800940 /* sample-atom.xml */; };
+		E170E8C21256C91E0019E021 /* sample-rss-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = E16A77191256790900800940 /* sample-rss-2.xml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E162AAED1259163C002B0036 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC0C605546C1D00DB518D;
+			remoteInfo = "ObjectiveFeed-Mac";
+		};
+		E170E8FD1256CA7A0019E021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC0C605546C1D00DB518D;
+			remoteInfo = "ObjectiveFeed-Mac";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E170E8331256C48A0019E021 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E170E82C1256C48A0019E021 /* GHUnit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		D2A6134D07B89F6200DD23D3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		D2AAC0C705546C1D00DB518D /* ObjectiveFeed-Mac.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "ObjectiveFeed-Mac.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E162AA2A1258E784002B0036 /* OFDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OFDate.h; sourceTree = "<group>"; };
+		E162AA2B1258E784002B0036 /* OFDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OFDate.m; sourceTree = "<group>"; };
+		E162AA88125910C5002B0036 /* OFSample-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OFSample-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E162AA8A125910C5002B0036 /* Example-Mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Example-Mac-Info.plist"; sourceTree = "<group>"; };
+		E162AAA71259118A002B0036 /* Example_MacAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example_MacAppDelegate.h; sourceTree = "<group>"; };
+		E162AAA81259118A002B0036 /* Example_MacAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example_MacAppDelegate.m; sourceTree = "<group>"; };
+		E162AAAA1259119D002B0036 /* Example_Mac_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example_Mac_Prefix.pch; sourceTree = "<group>"; };
+		E162AAAB1259119D002B0036 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E162AAAF125911BB002B0036 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = InfoPlist.strings; sourceTree = "<group>"; };
+		E162AAB1125911BB002B0036 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = MainMenu.xib; sourceTree = "<group>"; };
+		E162AAE61259162D002B0036 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		E162AAEF1259164A002B0036 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E16A76E81256789400800940 /* ObjectiveFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectiveFeed.h; path = ObjectiveFeed/ObjectiveFeed.h; sourceTree = "<group>"; };
+		E16A76E91256789400800940 /* ObjectiveFeedInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectiveFeedInternal.h; path = ObjectiveFeed/ObjectiveFeedInternal.h; sourceTree = "<group>"; };
+		E16A76EA1256789400800940 /* OFEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OFEntry.h; path = ObjectiveFeed/OFEntry.h; sourceTree = "<group>"; };
+		E16A76EB1256789400800940 /* OFEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OFEntry.m; path = ObjectiveFeed/OFEntry.m; sourceTree = "<group>"; };
+		E16A76EC1256789400800940 /* OFFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OFFeed.h; path = ObjectiveFeed/OFFeed.h; sourceTree = "<group>"; };
+		E16A76ED1256789400800940 /* OFFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OFFeed.m; path = ObjectiveFeed/OFFeed.m; sourceTree = "<group>"; };
+		E16A76EE1256789400800940 /* OFFeedProcessorAtom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OFFeedProcessorAtom.h; path = ObjectiveFeed/OFFeedProcessorAtom.h; sourceTree = "<group>"; };
+		E16A76EF1256789400800940 /* OFFeedProcessorAtom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OFFeedProcessorAtom.m; path = ObjectiveFeed/OFFeedProcessorAtom.m; sourceTree = "<group>"; };
+		E16A76F01256789400800940 /* OFFeedProcessorRss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OFFeedProcessorRss.h; path = ObjectiveFeed/OFFeedProcessorRss.h; sourceTree = "<group>"; };
+		E16A76F11256789400800940 /* OFFeedProcessorRss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OFFeedProcessorRss.m; path = ObjectiveFeed/OFFeedProcessorRss.m; sourceTree = "<group>"; };
+		E16A76F21256789400800940 /* OFLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OFLog.h; path = ObjectiveFeed/OFLog.h; sourceTree = "<group>"; };
+		E16A76F31256789400800940 /* OFLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OFLog.m; path = ObjectiveFeed/OFLog.m; sourceTree = "<group>"; };
+		E16A76F41256789400800940 /* OFParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OFParser.h; path = ObjectiveFeed/OFParser.h; sourceTree = "<group>"; };
+		E16A76F51256789400800940 /* OFParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OFParser.m; path = ObjectiveFeed/OFParser.m; sourceTree = "<group>"; };
+		E16A77181256790900800940 /* sample-atom.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "sample-atom.xml"; sourceTree = "<group>"; };
+		E16A77191256790900800940 /* sample-rss-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "sample-rss-2.xml"; sourceTree = "<group>"; };
+		E16A771B1256790900800940 /* OFTestProcessorDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OFTestProcessorDetect.h; path = Test/OFTestProcessorDetect.h; sourceTree = "<group>"; };
+		E16A771C1256790900800940 /* OFTestProcessorDetect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OFTestProcessorDetect.m; path = Test/OFTestProcessorDetect.m; sourceTree = "<group>"; };
+		E16A771D1256790900800940 /* OFTestRssParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OFTestRssParser.h; path = Test/OFTestRssParser.h; sourceTree = "<group>"; };
+		E16A771E1256790900800940 /* OFTestRssParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OFTestRssParser.m; path = Test/OFTestRssParser.m; sourceTree = "<group>"; };
+		E16A77481256799A00800940 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Tests-Info.plist"; path = "Test/Tests-Info.plist"; sourceTree = "<group>"; };
+		E16A774C125679B600800940 /* GHUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnit.framework; path = Frameworks/GHUnit.framework; sourceTree = "<group>"; };
+		E16A77771256B79E00800940 /* GHUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GHUnitTestMain.m; path = Test/GHUnitTestMain.m; sourceTree = "<group>"; };
+		E16A77931256B89100800940 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E16A792F1256BC6600800940 /* ObjectiveFeed-Mac_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ObjectiveFeed-Mac_Prefix.pch"; sourceTree = "<group>"; };
+		E170E6EE1256BEB10019E021 /* Tests_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tests_Prefix.pch; sourceTree = "<group>"; };
+		E170E7391256C1B50019E021 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E170E7FE1256C4630019E021 /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC0C505546C1D00DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2AAC0CC05546C4400DB518D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E162AA86125910C5002B0036 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E162AAE71259162D002B0036 /* WebKit.framework in Frameworks */,
+				E162AAEB12591634002B0036 /* Cocoa.framework in Frameworks */,
+				E162AAEC12591639002B0036 /* ObjectiveFeed-Mac.dylib in Frameworks */,
+				E162AAF01259164A002B0036 /* AppKit.framework in Frameworks */,
+				E162AAF11259164A002B0036 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E170E7FC1256C4630019E021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E170E80D1256C47C0019E021 /* GHUnit.framework in Frameworks */,
+				E170E8021256C4730019E021 /* ObjectiveFeed-Mac.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC0C705546C1D00DB518D /* ObjectiveFeed-Mac.dylib */,
+				E170E7FE1256C4630019E021 /* Tests.app */,
+				E162AA88125910C5002B0036 /* OFSample-Mac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* ObjectiveFeed-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				E162AA98125910D9002B0036 /* Example-Mac */,
+				E16A7716125678D600800940 /* Tests */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				E16A77481256799A00800940 /* Tests-Info.plist */,
+			);
+			name = "ObjectiveFeed-Mac";
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E162AA291258E784002B0036 /* Extensions */,
+				E16A7704125678A800800940 /* Processors */,
+				E16A76E81256789400800940 /* ObjectiveFeed.h */,
+				E16A76E91256789400800940 /* ObjectiveFeedInternal.h */,
+				E16A76EA1256789400800940 /* OFEntry.h */,
+				E16A76EB1256789400800940 /* OFEntry.m */,
+				E16A76EC1256789400800940 /* OFFeed.h */,
+				E16A76ED1256789400800940 /* OFFeed.m */,
+				E16A76F21256789400800940 /* OFLog.h */,
+				E16A76F31256789400800940 /* OFLog.m */,
+				E16A76F41256789400800940 /* OFParser.h */,
+				E16A76F51256789400800940 /* OFParser.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E16A774C125679B600800940 /* GHUnit.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2A6134D07B89F6200DD23D3 /* CoreData.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E16A77771256B79E00800940 /* GHUnitTestMain.m */,
+				E16A792F1256BC6600800940 /* ObjectiveFeed-Mac_Prefix.pch */,
+				E170E6EE1256BEB10019E021 /* Tests_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		E162AA291258E784002B0036 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E162AA2A1258E784002B0036 /* OFDate.h */,
+				E162AA2B1258E784002B0036 /* OFDate.m */,
+			);
+			name = Extensions;
+			path = ObjectiveFeed/Extensions;
+			sourceTree = "<group>";
+		};
+		E162AA98125910D9002B0036 /* Example-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				E162AAFC12591664002B0036 /* Frameworks */,
+				E162AA99125910E4002B0036 /* Classes */,
+				E162AA9B1259111F002B0036 /* Other sources */,
+				E162AA9A12591116002B0036 /* Resources */,
+			);
+			path = "Example-Mac";
+			sourceTree = "<group>";
+		};
+		E162AA99125910E4002B0036 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E162AAA71259118A002B0036 /* Example_MacAppDelegate.h */,
+				E162AAA81259118A002B0036 /* Example_MacAppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		E162AA9A12591116002B0036 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E162AAAE125911BB002B0036 /* InfoPlist.strings */,
+				E162AAB0125911BB002B0036 /* MainMenu.xib */,
+				E162AA8A125910C5002B0036 /* Example-Mac-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E162AA9B1259111F002B0036 /* Other sources */ = {
+			isa = PBXGroup;
+			children = (
+				E162AAAA1259119D002B0036 /* Example_Mac_Prefix.pch */,
+				E162AAAB1259119D002B0036 /* main.m */,
+			);
+			name = "Other sources";
+			sourceTree = "<group>";
+		};
+		E162AAFC12591664002B0036 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E16A77931256B89100800940 /* Foundation.framework */,
+				E170E7391256C1B50019E021 /* Cocoa.framework */,
+				E162AAE61259162D002B0036 /* WebKit.framework */,
+				E162AAEF1259164A002B0036 /* AppKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E16A7704125678A800800940 /* Processors */ = {
+			isa = PBXGroup;
+			children = (
+				E16A76EE1256789400800940 /* OFFeedProcessorAtom.h */,
+				E16A76EF1256789400800940 /* OFFeedProcessorAtom.m */,
+				E16A76F01256789400800940 /* OFFeedProcessorRss.h */,
+				E16A76F11256789400800940 /* OFFeedProcessorRss.m */,
+			);
+			name = Processors;
+			sourceTree = "<group>";
+		};
+		E16A7716125678D600800940 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E16A77171256790900800940 /* Fixtures */,
+				E16A771B1256790900800940 /* OFTestProcessorDetect.h */,
+				E16A771C1256790900800940 /* OFTestProcessorDetect.m */,
+				E16A771D1256790900800940 /* OFTestRssParser.h */,
+				E16A771E1256790900800940 /* OFTestRssParser.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		E16A77171256790900800940 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				E16A77181256790900800940 /* sample-atom.xml */,
+				E16A77191256790900800940 /* sample-rss-2.xml */,
+			);
+			name = Fixtures;
+			path = Test/Fixtures;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC0C305546C1D00DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E16A76F61256789400800940 /* ObjectiveFeed.h in Headers */,
+				E16A76F71256789400800940 /* ObjectiveFeedInternal.h in Headers */,
+				E16A76F81256789400800940 /* OFEntry.h in Headers */,
+				E16A76FA1256789400800940 /* OFFeed.h in Headers */,
+				E16A76FC1256789400800940 /* OFFeedProcessorAtom.h in Headers */,
+				E16A76FE1256789400800940 /* OFFeedProcessorRss.h in Headers */,
+				E16A77001256789400800940 /* OFLog.h in Headers */,
+				E16A77021256789400800940 /* OFParser.h in Headers */,
+				E16A79301256BC6600800940 /* ObjectiveFeed-Mac_Prefix.pch in Headers */,
+				E162AA2C1258E784002B0036 /* OFDate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC0C605546C1D00DB518D /* ObjectiveFeed-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB917D08733D990010E9CD /* Build configuration list for PBXNativeTarget "ObjectiveFeed-Mac" */;
+			buildPhases = (
+				D2AAC0C305546C1D00DB518D /* Headers */,
+				D2AAC0C405546C1D00DB518D /* Sources */,
+				D2AAC0C505546C1D00DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ObjectiveFeed-Mac";
+			productName = "ObjectiveFeed-Mac";
+			productReference = D2AAC0C705546C1D00DB518D /* ObjectiveFeed-Mac.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		E162AA87125910C5002B0036 /* Example-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E162AA8D125910C5002B0036 /* Build configuration list for PBXNativeTarget "Example-Mac" */;
+			buildPhases = (
+				E162AA84125910C5002B0036 /* Resources */,
+				E162AA85125910C5002B0036 /* Sources */,
+				E162AA86125910C5002B0036 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E162AAEE1259163C002B0036 /* PBXTargetDependency */,
+			);
+			name = "Example-Mac";
+			productName = "OFSample-Mac";
+			productReference = E162AA88125910C5002B0036 /* OFSample-Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E170E7FD1256C4630019E021 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E170E8341256C48A0019E021 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				E170E7FB1256C4630019E021 /* Sources */,
+				E170E7FC1256C4630019E021 /* Frameworks */,
+				E170E8331256C48A0019E021 /* CopyFiles */,
+				E170E8C91256C9270019E021 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E170E8FE1256CA7A0019E021 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = E170E7FE1256C4630019E021 /* Tests.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB918108733D990010E9CD /* Build configuration list for PBXProject "ObjectiveFeed-Mac" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* ObjectiveFeed-Mac */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC0C605546C1D00DB518D /* ObjectiveFeed-Mac */,
+				E170E7FD1256C4630019E021 /* Tests */,
+				E162AA87125910C5002B0036 /* Example-Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E162AA84125910C5002B0036 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E162AAB3125911BB002B0036 /* InfoPlist.strings in Resources */,
+				E162AAB4125911BB002B0036 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E170E8C91256C9270019E021 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E170E8C11256C91E0019E021 /* sample-atom.xml in Resources */,
+				E170E8C21256C91E0019E021 /* sample-rss-2.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC0C405546C1D00DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E16A76F91256789400800940 /* OFEntry.m in Sources */,
+				E16A76FB1256789400800940 /* OFFeed.m in Sources */,
+				E16A76FD1256789400800940 /* OFFeedProcessorAtom.m in Sources */,
+				E16A76FF1256789400800940 /* OFFeedProcessorRss.m in Sources */,
+				E16A77011256789400800940 /* OFLog.m in Sources */,
+				E16A77031256789400800940 /* OFParser.m in Sources */,
+				E162AA2D1258E784002B0036 /* OFDate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E162AA85125910C5002B0036 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E162AAA91259118A002B0036 /* Example_MacAppDelegate.m in Sources */,
+				E162AAAC1259119D002B0036 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E170E7FB1256C4630019E021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E170E8351256C49F0019E021 /* GHUnitTestMain.m in Sources */,
+				E170E83C1256C4C50019E021 /* OFTestProcessorDetect.m in Sources */,
+				E170E83D1256C4C50019E021 /* OFTestRssParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E162AAEE1259163C002B0036 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC0C605546C1D00DB518D /* ObjectiveFeed-Mac */;
+			targetProxy = E162AAED1259163C002B0036 /* PBXContainerItemProxy */;
+		};
+		E170E8FE1256CA7A0019E021 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC0C605546C1D00DB518D /* ObjectiveFeed-Mac */;
+			targetProxy = E170E8FD1256CA7A0019E021 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E162AAAE125911BB002B0036 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E162AAAF125911BB002B0036 /* English */,
+			);
+			name = InfoPlist.strings;
+			path = English.lproj;
+			sourceTree = "<group>";
+		};
+		E162AAB0125911BB002B0036 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E162AAB1125911BB002B0036 /* English */,
+			);
+			name = MainMenu.xib;
+			path = English.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB917E08733D990010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectiveFeed-Mac_Prefix.pch";
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "ObjectiveFeed-Mac";
+			};
+			name = Debug;
+		};
+		1DEB917F08733D990010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectiveFeed-Mac_Prefix.pch";
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "ObjectiveFeed-Mac";
+			};
+			name = Release;
+		};
+		1DEB918208733D990010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB918308733D990010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		E162AA8B125910C5002B0036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Example-Mac/Example-Mac-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "OFSample-Mac";
+			};
+			name = Debug;
+		};
+		E162AA8C125910C5002B0036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Example-Mac/Example-Mac-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "OFSample-Mac";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		E170E8001256C4630019E021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Test/Tests-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Tests;
+			};
+			name = Debug;
+		};
+		E170E8011256C4630019E021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Test/Tests-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Tests;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB917D08733D990010E9CD /* Build configuration list for PBXNativeTarget "ObjectiveFeed-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB917E08733D990010E9CD /* Debug */,
+				1DEB917F08733D990010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB918108733D990010E9CD /* Build configuration list for PBXProject "ObjectiveFeed-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB918208733D990010E9CD /* Debug */,
+				1DEB918308733D990010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E162AA8D125910C5002B0036 /* Build configuration list for PBXNativeTarget "Example-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E162AA8B125910C5002B0036 /* Debug */,
+				E162AA8C125910C5002B0036 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E170E8341256C48A0019E021 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E170E8001256C4630019E021 /* Debug */,
+				E170E8011256C4630019E021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

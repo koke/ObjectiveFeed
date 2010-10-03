@@ -1,0 +1,24 @@
+# Introduction
+
+ObjectiveFeed is a (still work-in-progress) Objective-C feed parser for Mac, iPhone and iPad
+
+# Implemented
+
+* Basic RSS 2.0 feed parsing:
+  * Channel info: title, link, pubDate
+  * Entry into: title, link, pubDate
+* Parse a NSData, or fetch an URL synchronously
+
+# 1.0 features to implement
+
+* Atom parsing
+* Load data form URL asynchronously
+* Store all the possible information from feeds
+* Create thumbnail for posts (either from <enclosure> or the first image in the content)
+* Usage guide and documentation
+
+# Future ideas
+
+* Handle most common RSS Extensions (see [rss-extensions.org](http://rss-extensions.org/wiki/Main_Page) for examples)
+* Be able to write RSS/Atom feeds
+* Check compatibility with older RSS versions
